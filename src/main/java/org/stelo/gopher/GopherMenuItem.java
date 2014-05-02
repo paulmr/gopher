@@ -7,7 +7,7 @@ public class GopherMenuItem {
 
     public char type;
 
-    public String displayName, selector, host, port;
+    protected String displayName, selector, host, port;
 
     public GopherMenuItem(String itemString) {
 	parse(itemString);
@@ -21,6 +21,10 @@ public class GopherMenuItem {
 	this.selector    = parts[1];
 	this.host        = parts[2];
 	this.port        = parts[3];
+    }
+
+    public String getDisplayName() {
+	return displayName;
     }
 
 }

@@ -13,7 +13,7 @@ public class GopherMenu extends ArrayList<GopherMenuItem> {
     }
 
     public void add(String itemString) {
-	System.out.println("ITEM: " + itemString);
 	GopherMenuItem item = new GopherMenuItem(itemString);
+	super.add(item);
     }
 }
